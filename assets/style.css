@@ -91,10 +91,15 @@
     .name {
         color: #00D2DF;
         font-size: 64px;
+        white-space: nowrap;
     }
 
     .img-perfil {
         width: 367px;
+    }
+
+    .img-home{
+        height: 600px;
     }
 
     .about {
@@ -188,6 +193,15 @@
           }
 
 
+
+          .container-1{
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+            margin-left: 150px;
+
+        }
+          
           
       ::webkit-scrollbar{
           width: 1px;
