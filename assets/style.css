@@ -95,6 +95,7 @@
 
     .img-perfil {
         width: 367px;
+        margin-top: 71px
     }
 
     .img-home {
@@ -147,7 +148,7 @@
     .projeto-pai {
         display: flex;
         row-gap: 200px;
-        height: 67vh;
+        height: 80%;
         flex-wrap: nowrap;
         column-gap: 60px;
         overflow-x: scroll;
@@ -253,4 +254,10 @@
         gap: 156px;
         DISPLAY: FLEX;
         padding-top: 50px;
+    }
+
+    .redes{
+        display: flex;
+        justify-content: initial;
+        gap: 171px;
     }
