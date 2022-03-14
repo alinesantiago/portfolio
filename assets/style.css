@@ -36,7 +36,7 @@
 
     .scroll {
         display: flex;
-        Home width: 100vw;
+        width: 100vw;
         height: 100vh;
         overflow: hidden;
     }
@@ -72,14 +72,13 @@
         margin-top: -100vh;
     }
 
-    #rd_xp:checked~.sections {
+    #rd_project:checked~.sections {
         margin-top: -200vh;
     }
 
-    #rd_project:checked~.sections {
+    #rd_xp:checked~.sections {
         margin-top: -300vh;
     }
-
 
 
 
@@ -98,7 +97,7 @@
         width: 367px;
     }
 
-    .img-home{
+    .img-home {
         height: 600px;
     }
 
@@ -148,17 +147,25 @@
     .projeto-pai {
         display: flex;
         row-gap: 200px;
-        height: 70%;
+        height: 67vh;
         flex-wrap: nowrap;
         column-gap: 60px;
         overflow-x: scroll;
         overflow: none;
-        
+
     }
 
-    .projetos{
+    .projeto-pai::-webkit-scrollbar-track-piece {
+        background-color: #e4e4e4;
+    }
+
+
+
+
+    .projetos {
         font-size: 24px;
         color: white;
+        padding-top: 50px;
     }
 
     .titulo-projeto {
@@ -176,37 +183,74 @@
     }
 
     .buttonClass {
-            -webkit-border-radius: 5;
-            -moz-border-radius: 5;
-            border-radius: 5px;
-            color: #ffffff;
-            font-size: 16px;
-            background: #121212;
-            padding: 12px 13px 13px 8px;
-            border: solid #9358F7 2px;
-            text-decoration: none;
-          }
-          
-          .buttonClass:hover {
-            background: #9358F7;
-            text-decoration: none;
-          }
+        -webkit-border-radius: 5;
+        -moz-border-radius: 5;
+        border-radius: 5px;
+        color: #ffffff;
+        font-size: 16px;
+        background: #121212;
+        padding: 12px 13px 13px 8px;
+        border: solid #9358F7 2px;
+        text-decoration: none;
+    }
+
+    .buttonClass:hover {
+        background: #9358F7;
+        text-decoration: none;
+    }
 
 
 
-          .container-1{
-            display: flex;
-            flex-direction: column;
-            align-self: center;
-            margin-left: 150px;
+    .container-1 {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        margin-left: 150px;
 
-        }
-          
-          
-      ::webkit-scrollbar{
-          width: 1px;
-      }
+    }
 
-      ::webkit-scrollbar-track{
-          background-color: #00D2DF;
-      }
+
+    ::webkit-scrollbar {
+        width: 10px;
+    }
+
+    .projetos::webkit-scrollbar-track {
+        background-color: #00D2DF;
+    }
+
+
+
+    .xp-1 {
+        color: #ffffff;
+        font-size: 24px;
+
+    }
+
+    .xp-cargo {
+        color: #ffffff;
+        font-size: 24px;
+        margin-bottom: 26px
+    }
+
+    .xp-empresa {
+        font-size: 16px;
+        color: #00D2DF;
+        margin-bottom: 30px;
+    }
+
+    .descricao {
+        font-size: 18px;
+        color: #C4C4C4;
+        margin-bottom: 30px;
+
+    }
+
+    .xp-pai {
+        max-width: 600px;
+    }
+
+    .xp-vo {
+        gap: 156px;
+        DISPLAY: FLEX;
+        padding-top: 50px;
+    }
